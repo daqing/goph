@@ -87,10 +87,11 @@ func NewConn(config *Config) (c *Client, err error) {
 // Dial starts a client connection to SSH server based on config.
 func Dial(proto string, c *Config) (*ssh.Client, error) {
 	return ssh.Dial(proto, net.JoinHostPort(c.Addr, fmt.Sprint(c.Port)), &ssh.ClientConfig{
-		User:            c.User,
-		Auth:            c.Auth,
-		Timeout:         c.Timeout,
-		HostKeyCallback: c.Callback,
+		User:              c.User,
+		Auth:              c.Auth,
+		Timeout:           c.Timeout,
+		HostKeyCallback:   c.Callback,
+		HostKeyAlgorithms: []string{ssh.KeyAlgoECDSA256, ssh.KeyAlgoED25519},
 	})
 }
 
