@@ -91,7 +91,7 @@ func Dial(proto string, c *Config) (*ssh.Client, error) {
 		Auth:              c.Auth,
 		Timeout:           c.Timeout,
 		HostKeyCallback:   c.Callback,
-		HostKeyAlgorithms: []string{ssh.KeyAlgoECDSA256, ssh.KeyAlgoED25519},
+		HostKeyAlgorithms: []string{ssh.KeyAlgoED25519},
 	})
 }
 
