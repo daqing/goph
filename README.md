@@ -1,7 +1,7 @@
 <div align="center">
 	<h1>Golang SSH Client.</h1>
-	<a href="https://github.com/melbahja/goph">
-		<img src="https://github.com/melbahja/goph/raw/master/.github/goph.png" width="200">
+	<a href="https://github.com/daqing/goph">
+		<img src="https://github.com/daqing/goph/raw/master/.github/goph.png" width="200">
 	</a>
 	<h4 align="center">
 		Fast and easy golang ssh client module.
@@ -21,10 +21,10 @@
 ## 🚀&nbsp; Installation and Documentation
 
 ```bash
-go get github.com/melbahja/goph
+go get github.com/daqing/goph
 ```
 
-You can find the docs at [go docs](https://pkg.go.dev/github.com/melbahja/goph).
+You can find the docs at [go docs](https://pkg.go.dev/github.com/daqing/goph).
 
 ## 🤘&nbsp; Features
 
@@ -49,7 +49,7 @@ package main
 import (
 	"log"
 	"fmt"
-	"github.com/melbahja/goph"
+	"github.com/daqing/goph"
 )
 
 func main() {
@@ -187,4 +187,4 @@ Feel free to open a new issue, or contact me.
 
 ## 📘&nbsp; License
 
-Goph is provided under the [MIT License](https://github.com/melbahja/goph/blob/master/LICENSE).
+Goph is provided under the [MIT License](https://github.com/daqing/goph/blob/master/LICENSE).
